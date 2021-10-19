@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('assets/fonts/lato-regular-webfont.woff2') format('woff2'),
+    url('assets/fonts/lato-regular-webfont.woff') format('woff'),
+    url('assets/fonts/lato-regular-webfont.ttf') format('truetype'),
+    url('assets/fonts/lato-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('assets/fonts/montserrat-bold-webfont.woff2') format('woff2'),
+    url('assets/fonts/montserrat-bold-webfont.woff') format('woff'),
+    url('assets/fonts/montserrat-bold-webfont.ttf') format('truetype'),
+    url('assets/fonts/montserrat-bold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+html {
+    font-size: 14px;     
+}
+
+body {
+    margin: 0 auto;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;   
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat-Bold', sans-serif; 
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 2.2rem;
+}
+
+p {
+    max-width: 70ch;
+    line-height: 1.5;
+}
+
+header {
+    box-sizing: border-box;
+    height: 55vh;
+    background-image: url(assets/img/studentsbg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+header > div {
+    background-color: #c5192d;
+    position: absolute;
+    bottom: -4rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;    
+    box-sizing: border-box; 
+    margin: 0 0.5rem;
+}
+
+main {
+    box-sizing: border-box;
+    box-shadow: 0 0 1px 0 darkgray; 
+    background-color: whitesmoke;   
+    margin: 2rem 0.5rem;
+    padding: 0 0 2rem 0;
+}
+
+#intro-container {
+    box-sizing: border-box;
+    margin: 6rem auto;
+    padding: 2rem 2rem;
+    background-color: #c5192d;  
+}
+
+li {
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+li::content {
+    width: 1rem;
+}
+
+li:nth-child(3n + 1)::before {
+    content: "\1F64C";
+    margin: 1rem 1rem 0 1rem;
+}
+
+li:nth-child(3n + 2)::before {
+    content: "\1F3EB";
+    margin: 1rem 1rem 0 1rem;
+}
+
+li:nth-child(3n)::before {
+    content: "\1F4DA";
+    margin: 1rem 1rem 0 1rem;
+}
+
+article:nth-child(2), article:nth-child(3), article:nth-child(4) {
+    box-sizing: border-box;
+    margin: 2rem 0 0 0;  
+    padding: 0rem 2rem;    
+}
+
+article:nth-child(2) {
+    border-bottom: 0.1px solid darkgray;
+}
+
+img {
+    box-sizing: border-box;
+    display: block;
+    max-width: 100%;
+    margin: 0 0 2rem 0;   
+}
+
+article:nth-child(3) {
+    display: table;
+}
+
+article:nth-child(3) > img {
+    display: table-footer-group; 
+}
+
+article:nth-child(3) > div {
+    display: table-header-group; 
+}
+
+footer {
+    box-sizing: border-box;
+    background-color: #c5192d;
+    color: white;
+    margin: 0rem 0.5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+/*Tablet*/
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        height: 65vh;
+        margin: 0 auto;
+    }
+
+    header > div {
+        box-sizing: border-box;
+        margin: 0 auto;
+        left: 7.5%;
+    }
+
+    header > div p {
+        margin: 0 auto;
+    }
+
+    header > div, main, footer {
+        width: 85%;
+    }
+
+    main {
+        margin: 2rem auto;
+    }
+
+    article {
+        box-sizing: border-box;
+        column-count: 2;
+        column-width: auto;
+        column-gap: 10%; 
+    }
+
+    article:nth-child(2) > img {
+        float: right;
+    }
+
+    article:nth-child(3) {
+        padding: 2rem 2rem;
+        margin: 0;
+    }
+
+    article:nth-child(3) > img {
+        margin: 0;
+        padding: 0;
+        max-width: 45%;  
+        float: left;
+    }
+    
+    article:nth-child(3) > div {
+        float: right;
+        max-width: 45%;
+    }
+    
+    article:nth-child(4) > img {
+        margin: 0;
+        padding: 0;
+    }
+
+    #intro-container {
+        background: linear-gradient(90deg, #c5192d 50%, whitesmoke 50%);
+        border-bottom: 0.1px solid darkgray;
+        margin-bottom: 0;
+    }     
+
+    article:nth-child(3) {
+        border-bottom: 0.1px solid darkgray;
+    }
+
+    footer {
+        margin: 0 auto;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 960px) and (max-width:2000px) {
+    body {
+        font-size: 24px;
+    }
+
+    header {
+        height: 65vh;
+        margin: 0 auto;
+    }
+
+    header > div {
+        box-sizing: border-box;
+        margin: 0 auto;
+        left: 15%;
+    }
+
+    header > div, main, footer {
+        width: 70%;
+    }
+
+    main {
+        margin: 2rem auto;
+    }
+
+    article {
+        box-sizing: border-box;
+        column-count: 2;
+        column-width: auto;
+        column-gap: 10%; 
+    }
+
+    article:nth-child(2) > img {
+        float: right;
+    }
+
+    article:nth-child(3) {
+        padding: 2rem 2rem;
+        margin: 0;
+    }
+
+    article:nth-child(3) > img {
+        margin: 0;
+        padding: 0;
+        max-width: 45%;  
+        float: left;
+    }
+
+    article:nth-child(3) > div {
+        float: right;
+        max-width: 45%;
+    }
+
+    article:nth-child(4) > img {
+        margin: 0;
+        padding: 0;
+    }
+
+    #intro-container {
+        background: linear-gradient(90deg, #c5192d 50%, whitesmoke 50%);
+        border-bottom: 0.1px solid darkgray;
+        margin-bottom: 0;
+    }     
+
+    article:nth-child(3) {
+        border-bottom: 0.1px solid darkgray;
+    }
+
+    footer {
+        margin: 0 auto;
+    }
+}

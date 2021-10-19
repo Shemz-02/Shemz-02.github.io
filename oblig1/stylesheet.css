@@ -1,0 +1,224 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0; 
+}
+
+h1 {
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+  color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  text-align: center;
+}
+ 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navtitle {
+  color: lightsalmon;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.navbar {
+  background-color: #272727;
+  display: flex;
+  text-align:  center;
+}
+  
+.navbar a {
+  color: #e7e7e7;
+}
+  
+.navbar ul {
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 3px;
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+}
+  
+.navbar ul li a {
+  color: #e7e7e7;
+  margin-left: 0px;
+  padding: 24.8px;
+  width: 261px;
+  font-size: 22px;
+  display: block;
+}
+  
+.navbar ul a:hover, .navbar ul a:focus {
+  background-color: black;
+}
+
+.content {
+  padding: 10px 10%;
+  margin: 35px;
+  color: white;
+  background-color: #2D283E;
+  font-size: 1.5em;
+  line-height: 200%;
+}
+
+.box3 {
+  font-size: 1.5em;
+  padding: 10px 10%;
+  margin: 35px;
+  background-color: #2D283E;
+  color: white; 
+}
+
+.box3 li {
+  color: whitesmoke;
+  padding: 0px;
+  margin-top: 20px;  
+}
+
+.box3 ul {
+  display: table; 
+  margin: 0 auto;
+  text-align: center; 
+}
+
+.tittel {
+  font-size: 45px;
+  color: orange;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #272727;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer ul {
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 15px;
+  margin-bottom: 16px;
+}
+
+footer a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+
+footer i {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+#photoquote {
+  font-size: 1.5em;
+}
+
+/*CSS for /Cv1/index.html*/
+
+#upBox {
+  width: 100%;
+  height: 300px;
+  float: left;
+  margin-top: -5px;
+}
+
+#portraitNaruto {
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+#explainBox {
+  background-color: #564f6f;
+  width: 1140px;
+  height: 300px;
+  float: left;
+}
+
+#explanation {
+  padding: 10px 10%;
+  margin: 35px;
+  line-height: 200%;
+  font-size: 20px;
+  float: left;
+}
+
+#leftBox {
+  width: 300px;
+  height: 1000px;
+  background-color: #564f6f;
+  float: left;
+}
+
+#rightBox {
+  width: 1120px;
+  height: 1000px;
+  float: left;
+}
+
+#rightContentCV {
+  margin-top: 25px;
+}
+
+.boxcv li {
+  color: black;
+  padding: 20px;
+  margin-top: 20px;  
+}
+
+.boxcv ul {
+  display: table; 
+  margin: 0 auto;
+  text-align: left;
+  color: black;
+}
+
+#end {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  float: left;
+}
+
+.Container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.WebsiteH1 {
+  position: absolute;
+  bottom: 40%;
+  left: 4%;
+  font-size: 105px;
+  color: whitesmoke;
+}
